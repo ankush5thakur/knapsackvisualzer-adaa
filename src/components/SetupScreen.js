@@ -122,26 +122,23 @@ function SetupScreen({ items, capacity }) {
       <h2 className="title">Knapsack Algorithm</h2>
       <div className="explanation">
         <p>
-          The{" "}
-          <a
-            className="link"
-            href="https://en.wikipedia.org/wiki/Knapsack_problem"
-          >
-            knapsack problem
-          </a>{" "}
-          is usually described with a story. For example, a hiker needs to pack
-          a knapsack for their expedition. There are many items the hiker would
-          like to take: a tent, a sleeping bag, a frisbee, a selfie stick, a
-          raincoat etc... But the knapsack can only carry a maximum amount of
-          weight.
-        </p>
+          {" "}
+          The knapsack problem is usually described with a story. For example,
+          imagine a thief who has broken into a jewelry store. The thief has a
+          limited-sized bag and can only carry a maximum weight of items without
+          getting caught due to the weight slowing them down. The store has
+          various valuable items: gold coins, diamond necklaces, silver rings,
+          and precious gems, each with a different value and weight.{" "}
+        </p>{" "}
         <p>
-          The hiker gives a value to the potential items. An item that will be
-          very beneficial, like a sleeping bag, will have a high value. An item
-          that will be less beneficial, like a frisbee, will have a lower value.
-          The hiker must prioritize which items to take based on the items'
-          values and weights. The knapsack algorithm solves the hiker's dilemma
-          by finding the most valuable items that will fit in the knapsack.
+          {" "}
+          The thief wants to maximize the total value of items they take, but
+          they can only pick items that will fit within the weight limit of
+          their bag. For instance, a diamond necklace might be light and
+          valuable, while a stack of gold coins might be heavier and less
+          valuable per weight. The knapsack algorithm helps the thief decide
+          which items to prioritize to get the highest possible value without
+          exceeding the weight limit.{" "}
         </p>
         <p>
           This app will step through the knapsack algorithm. Below, you may
@@ -337,13 +334,19 @@ function SetupScreen({ items, capacity }) {
 
       <h2 className="title mt-6">Algorithm Details</h2>
       <div className="explanation">
-        <p>In this version of the story there are also two constraints:</p>
+        <p>In this version of the story, there are also two constraints:</p>{" "}
         <ol className="list-decimal ml-8">
+          {" "}
           <li>
-            The hiker cannot break an item into pieces and take some of the
-            pieces
-          </li>
-          <li>The hiker cannot take multiples of an item</li>
+            {" "}
+            The thief cannot split an item into pieces and take only part of it.
+            They must take the whole item or leave it.{" "}
+          </li>{" "}
+          <li>
+            {" "}
+            The thief cannot take more than one of each item available in the
+            store.{" "}
+          </li>{" "}
         </ol>
         <p>
           This is known as the "0-1 knapsack problem"; an item is taken, or it
@@ -392,7 +395,6 @@ function SetupScreen({ items, capacity }) {
             />
           </span>
         </div>
-
         <p>
           Where <em>i</em> is an item{" "}
           <em>
@@ -444,18 +446,6 @@ function SetupScreen({ items, capacity }) {
           that last's cell will contain the max value the knapsack can contain.
           The algorithm then walks through the table to get the items that make
           up that max value.
-        </p>
-        <p>
-          The knapsack problem comes in many variations. For information about
-          other versions, see{" "}
-          <a
-            className="link"
-            href="http://www.or.deis.unibo.it/kp/Chapter1.pdf"
-          >
-            "KNAPSACK PROBLEMS - Algorithms and Computer Implementations by
-            Silvano Martello and Paolo Toth"
-          </a>
-          .
         </p>
       </div>
     </div>
