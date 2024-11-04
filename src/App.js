@@ -1,6 +1,6 @@
 // App.js
 import "./App.css";
-import React, { useReducer, useState } from "react";
+import React, { useReducer } from "react";
 import SetupScreen from "./components/SetupScreen";
 import { capacityDefaults } from "./models/ValueDefaults";
 import SolutionController from "./components/solution/SolutionController";
