@@ -15,7 +15,7 @@ const actionTypes = {
   reset: 2,
 };
 
-const tipJarLink = "https://ko-fi.com/W7W4CXVBZ";
+// const tipJarLink = "https://ko-fi.com/W7W4CXVBZ";
 
 function App() {
   const initItems = [
@@ -62,9 +62,9 @@ function App() {
     }
   }
 
-  function menuBtnClick() {
-    setShowHeaderMenuItems(!showHeaderMenuItems);
-  }
+  // function menuBtnClick() {
+  //   setShowHeaderMenuItems(!showHeaderMenuItems);
+  // }
 
   return (
     <div>
