@@ -32,7 +32,7 @@ function App() {
   };
 
   const [state, dispatch] = useReducer(reducer, initialState);
-  const [showHeaderMenuItems, setShowHeaderMenuItems] = useState(false);
+  // const [showHeaderMenuItems, setShowHeaderMenuItems] = useState(false);
 
   function scrollToTop() {
     window.scrollTo({
